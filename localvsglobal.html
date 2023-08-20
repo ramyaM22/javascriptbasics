@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var  a=30; //globl
+        console.log("outside the function"+a);
+        function func(){
+        var z=23; //local 
+        console.log("inside the function"+z);
+        console.log("inside the function"+a);
+        }
+        console.log("variable from the function which is displaying outside:",z)
+    </script>
+</head>
+<body>
+    <button onclick="func()">Submit</button>
+</body>
+</html>
